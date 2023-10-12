@@ -15,7 +15,6 @@ const Section = styled.section`
   display: flex;
   flex-direction: column;
   box-sizing: border-box;
-
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: flex;
     flex-direction: column;
@@ -107,6 +106,7 @@ const DivSlider = styled.div`
     display: flex;
     margin-left: 0;
     margin-top: 0;
+    
   }
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     flex-direction: column;
@@ -120,7 +120,6 @@ const Divbuttons = styled.div`
   gap: 35px;
   margin-right: 3.5rem;
   margin-top: 1rem;
-
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     display: none;
   }
@@ -143,10 +142,12 @@ const DivButtonsTablet = styled.div`
     flex-direction: row;
     gap: 20px;
     transform: scale(0.5);
-    margin-top: 2%;
-    margin-bottom: 2%;
+    margin-top: 15%;
+    margin-bottom: 10%;
   }
 `;
+
+
 const DivbuttonsItem = styled.div`
   &:hover {
     cursor: pointer;
@@ -168,13 +169,15 @@ const DivContentSlider = styled.div`
     justify-content: center;
     align-items: center;
   }
-  @media screen and (min-width: 501px) and (max-width: 1100px) {
+  @media screen and (min-width: 501px)and (max-width:1100px)
+  {    
     margin-top: 5rem;
     margin-left: 0;
     flex-direction: column-reverse;
     justify-content: none;
     height: 70%;
   }
+
 `;
 const Divtext = styled.div`
   width: 500px;
@@ -183,8 +186,7 @@ const Divtext = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  transform: scale(1.5);
-  margin-left: 10rem;
+  margin-left: 5%;
   @media screen and (max-width: 500px) {
     width: 100%;
     justify-content: center;
@@ -269,10 +271,12 @@ const DivSecondText = styled.div`
   }
 `;
 const DivImg = styled.div`
-  width: 40rem;
-  hegith: 70rem;
   @media screen and (min-width: 501px) and (max-width: 1100px) {
     width: 100%;
+  }
+  @media screen and (max-width: 500px) {
+    width: 100%;
+    
   }
   @media screen and (max-width: 500px) {
     width: 100%;
